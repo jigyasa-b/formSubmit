@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="website.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,300;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo.png" ></a>
+            <div class="nav-links" id="navLinks" >
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificates & Online programs for 2023</h1>
+    </section>
+
+<!-- ---------------------------Blog Page Content----------------- -->
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="certificate.jpg" alt="">
+            <h2>Our Certificates & Online programs for 2023</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate cupiditate aliquid magni porro velit ipsa, similique ea quos labore repellat, debitis eius magnam temporibus possimus, tenetur reiciendis nostrum ut. Molestias?</p>
+            <br><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque ea dolorum repudiandae corrupti numquam, hic sequi ut sed voluptates earum rem explicabo quidem molestiae unde non temporibus optio cumque! Eos!</p>
+            <br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, reprehenderit. Ex aut ea harum enim, vero assumenda cupiditate, nostrum, ipsa vel provident accusantium. Adipisci doloremque quasi similique facilis unde dolorem, exercitationem quidem dolor repellendus! Debitis ipsum molestiae modi facilis voluptas.</p>
+            <br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cumque repellendus minus eum ipsa, quos tempora excepturi sed assumenda nulla vel, suscipit est velit architecto cum, quod reiciendis temporibus. Et.</p>
+
+            <div class="commect-box">
+                <h3>Leave a comment</h3>
+                <form action="" class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Email">
+                    <textarea  rows="5" placeholder="Your comment"></textarea>
+                    <button type="submit" class="hero-btn red-btn"  >POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Data Science</span>
+                <span>29</span>
+            </div>
+            <div>
+                <span>Machine Learning</span>
+                <span>35</span>
+            </div>
+            <div>
+                <span>Computer Science</span>
+                <span>40</span>
+            </div>
+            <div>
+                <span>AutoCAD</span>
+                <span>42</span>
+            </div>
+            <div>
+                <span>Journalism</span>
+                <span>41</span>
+            </div>
+            <div>
+                <span>Commerce</span>
+                <span>31</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- ----------------------------Footer----------------------------------- -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Corrupti veniam aspernatur corporis? Commodi cumque ipsa ratione sapiente quas. Quisquam, reiciendis.</p>
+    <div class="icons">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+    </div>
+    <p>Made with  <i class="fa fa-heart-o" aria-hidden="true"></i> </p>
+</section>
+
+
+
+    <!-- java script for toggle menu -->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu()
+        {
+            navLinks.style.right="-200px"
+        }
+    </script>
+</body>
+</html>
